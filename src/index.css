@@ -3,7 +3,8 @@ body {
   font-family: "Trebuchet MS", "Tahoma";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(44, 44, 44);
+  /* background-color: rgb(44, 44, 44); */
+  background-color: rgb(38, 36, 68);
 }
 
 code {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Dice from "./components/dice";
-import { d6, d10, d12, d20, d120, coin } from "./diceTypes";
+import { d4, d6, d8, d10, d12, d20, d100, d120, coin } from "./diceTypes";
 function App() {
   const [columnOne, setColumnOne] = useState(d6);
   const [columnTwo, setColumnTwo] = useState(d6);
@@ -21,8 +21,14 @@ function App() {
                   setColumnOne(event.target.value.split(","));
                 }}
               >
+                <option key="d4" id="d4" value={d4}>
+                  d4
+                </option>
                 <option key="d6" id="d6" value={d6}>
                   d6
+                </option>
+                <option key="d8" id="d8" value={d8}>
+                  d8
                 </option>
                 <option key="d10" id="d10" value={d10}>
                   d10
@@ -32,6 +38,9 @@ function App() {
                 </option>
                 <option key="d20" id="d20" value={d20}>
                   d20
+                </option>
+                <option key="d100" id="d100" value={d100}>
+                  d100
                 </option>
                 <option key="d120" id="d120" value={d120}>
                   d120
@@ -53,8 +62,14 @@ function App() {
                 setColumnTwo(event.target.value.split(","));
               }}
             >
+              <option key="d4" id="d4" value={d4}>
+                d4
+              </option>
               <option key="d6" id="d6" value={d6}>
                 d6
+              </option>
+              <option key="d8" id="d8" value={d8}>
+                d8
               </option>
               <option key="d10" id="d10" value={d10}>
                 d10
@@ -64,6 +79,9 @@ function App() {
               </option>
               <option key="d20" id="d20" value={d20}>
                 d20
+              </option>
+              <option key="d100" id="d100" value={d100}>
+                d100
               </option>
               <option key="d120" id="d120" value={d120}>
                 d120
@@ -84,8 +102,14 @@ function App() {
                 setColumnThree(event.target.value.split(","));
               }}
             >
+              <option key="d4" id="d4" value={d4}>
+                d4
+              </option>
               <option key="d6" id="d6" value={d6}>
                 d6
+              </option>
+              <option key="d8" id="d8" value={d8}>
+                d8
               </option>
               <option key="d10" id="d10" value={d10}>
                 d10
@@ -95,6 +119,9 @@ function App() {
               </option>
               <option key="d20" id="d20" value={d20}>
                 d20
+              </option>
+              <option key="d100" id="d100" value={d100}>
+                d100
               </option>
               <option key="d120" id="d120" value={d120}>
                 d120

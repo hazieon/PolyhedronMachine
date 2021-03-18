@@ -62,14 +62,20 @@ function Dice({ type }) {
         <h2 className={styles.activeDiceText}>
           {type.length === 2
             ? "coin"
+            : "d" + type.length && type.length === 4
+            ? "tetrahedron"
             : "d" + type.length && type.length === 6
             ? "cube"
+            : "d" + type.length && type.length === 8
+            ? "octohedron"
             : "d" + type.length && type.length === 10
             ? "pentagonal trapezohedron"
             : "d" + type.length && type.length === 12
             ? "dodecahedron"
             : "d" + type.length && type.length === 20
             ? "icosahedron"
+            : "d" + type.length && type.length === 100
+            ? "zocchihedron"
             : "d" + type.length && type.length === 120
             ? "disdyakis triacontahedron"
             : "d" + type.length}
@@ -81,7 +87,7 @@ function Dice({ type }) {
       </div>
       <button onClick={rollAll}>roll all</button>
 
-      <h4>
+      <h4 className={styles.sum}>
         sum:
         {sum ? sum : "－"}
       </h4>
