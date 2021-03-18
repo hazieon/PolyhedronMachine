@@ -1,10 +1,39 @@
 .App {
   text-align: center;
+  justify-content: center;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.774);
 }
 .dice-zone {
+  margin: auto;
   text-align: center;
   display: grid;
   grid-template-columns: auto auto auto;
+}
+
+.selectContainer {
+  display: inline;
+}
+
+.select {
+  margin: auto;
+  text-align: center;
+  border-radius: 30px;
+  display: block;
+  padding: 4px 10px;
+  color: #444;
+  line-height: 1.3;
+  min-width: fit-content;
+  max-width: 30%; /* useful when width is set to anything other than 100% */
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5em;
+
+  background-color: #fff;
+}
+.select option {
+  border-radius: 30px;
 }
 
 @media only screen and (max-width: 500px) {

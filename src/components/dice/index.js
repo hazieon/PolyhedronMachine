@@ -56,12 +56,13 @@ function Dice({ type }) {
   return (
     <>
       <div>
+        <h1>Active Dice:d{type.length}</h1>
         <button onClick={addQuantity}>add</button>
-        <button onClick={subtractQuantity}>subtract</button>
+        <button onClick={subtractQuantity}>remove</button>
       </div>
 
       <button onClick={rollAll}>roll all</button>
-      <h1>Active Dice:d{type.length}</h1>
+
       <h4>
         sum:
         {sum ? sum : "－"}
@@ -73,7 +74,7 @@ function Dice({ type }) {
             <div key={i} className={styles.dice}>
               <h3>{d.roll}</h3>
             </div>
-            <button onClick={() => randomRoll(i)}>roll</button>
+            <button onClick={() => randomRoll(i)}>roll </button>
           </>
         );
       })}
