@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
 
 function Dice({ type }) {
-  const [roll, setRoll] = useState();
+  const [roll, setRoll] = useState("roll");
   const [number, setNumber] = useState(1);
   const [diceArr, setDiceArr] = useState([{ roll: "roll" }]);
   const [sum, setSum] = useState(0);
@@ -47,7 +47,7 @@ function Dice({ type }) {
     if (diceArr[0].roll !== "roll") {
       setSum(
         diceArr.reduce((acc, cur) => {
-          return acc + cur.roll;
+          return acc + Number(cur.roll);
         }, 0)
       );
     }
@@ -62,7 +62,7 @@ function Dice({ type }) {
       <h1>Active Dice:d{type.length}</h1>
       <p>
         sum:
-        {sum}
+        {sum ? sum : "－"}
       </p>
 
       {diceArr.map((d, i) => {
