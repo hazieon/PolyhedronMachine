@@ -55,16 +55,24 @@ function Dice({ type }) {
 
   return (
     <div className={styles.diceContainer}>
+      <p>Active Dice:</p>
       <div className={styles.diceTextBox}>
-        <h1 className={styles.activeDiceText}>
-          <label for=".activeDiceText">Active Dice:</label>
-
-          {type.length === 120
-            ? "disdyakis triacontahedron"
-            : "d" + type.length && type.length === 2
+        <h2 className={styles.activeDiceText}>
+          {"d" + type.length}{" "}
+          {type.length === 2
             ? "coin"
+            : "d" + type.length && type.length === 6
+            ? "cube"
+            : "d" + type.length && type.length === 10
+            ? "pentagonal trapezohedron"
+            : "d" + type.length && type.length === 12
+            ? "dodecahedron"
+            : "d" + type.length && type.length === 20
+            ? "icosahedron"
+            : "d" + type.length && type.length === 120
+            ? "disdyakis triacontahedron"
             : "d" + type.length}
-        </h1>
+        </h2>
         <button onClick={addQuantity}>add</button>
         <button onClick={subtractQuantity}>remove</button>
       </div>
