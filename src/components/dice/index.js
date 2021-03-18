@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
 
 function Dice({ type }) {
   const [roll, setRoll] = useState();
   const [number, setNumber] = useState(1);
   const [diceArr, setDiceArr] = useState([{ roll: "roll" }]);
-  console.log({ type });
+  const [sum, setSum] = useState(0);
 
   function randomRoll(i) {
     let randomIndex = Math.floor(Math.random() * type.length);
     setRoll(type[randomIndex]);
-    console.log(i);
     setDiceDisplay(i);
     return type[randomIndex];
   }
@@ -19,13 +18,18 @@ function Dice({ type }) {
     // console.log(selectedDice);
     return (selectedDice.roll = roll);
   }
+  function rollAll() {
+    diceArr.forEach((dice, index) => {
+      dice.roll = randomRoll(index);
+    });
+  }
+
   function addQuantity() {
     if (number < 6) {
       setNumber(number + 1);
-      console.log(number);
+      //   console.log(number);
       setDiceArr([...diceArr, { roll: "roll" }]);
     } else {
-      console.log(number);
       setNumber(number);
     }
   }
@@ -33,25 +37,32 @@ function Dice({ type }) {
   function subtractQuantity() {
     if (number > 1) {
       setNumber(number - 1);
-      console.log(number);
       setDiceArr(diceArr.splice(0, diceArr.length - 1));
     } else {
-      console.log(number);
       setNumber(number);
     }
   }
+
+  useEffect(() => {
+    if (diceArr[0].roll !== "roll") {
+      setSum(
+        diceArr.reduce((acc, cur) => {
+          return acc + cur.roll;
+        }, 0)
+      );
+    }
+  }, [roll]);
+
   return (
     <>
       <button onClick={addQuantity}>add</button>
       <button onClick={subtractQuantity}>subtract</button>
       <p></p>
-      <button>roll all</button>
+      <button onClick={rollAll}>roll all</button>
       <h1>Active Dice:d{type.length}</h1>
       <p>
         sum:
-        {diceArr.reduce((acc, cur) => {
-          return acc + cur.roll;
-        }, 0)}
+        {sum}
       </p>
 
       {diceArr.map((d, i) => {
