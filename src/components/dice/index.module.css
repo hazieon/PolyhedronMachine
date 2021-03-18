@@ -8,3 +8,9 @@
   height: fit-content;
   user-select: none;
 }
+
+button {
+  border-radius: 7px;
+  padding: 3px 10px;
+  margin: 0.2rem;
+}

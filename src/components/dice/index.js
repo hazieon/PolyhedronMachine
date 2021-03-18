@@ -55,15 +55,17 @@ function Dice({ type }) {
 
   return (
     <>
-      <button onClick={addQuantity}>add</button>
-      <button onClick={subtractQuantity}>subtract</button>
-      <p></p>
+      <div>
+        <button onClick={addQuantity}>add</button>
+        <button onClick={subtractQuantity}>subtract</button>
+      </div>
+
       <button onClick={rollAll}>roll all</button>
       <h1>Active Dice:d{type.length}</h1>
-      <p>
+      <h4>
         sum:
         {sum ? sum : "－"}
-      </p>
+      </h4>
 
       {diceArr.map((d, i) => {
         return (
