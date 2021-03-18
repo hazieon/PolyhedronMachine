@@ -43,7 +43,7 @@ button:hover {
   background-color: rgb(255, 255, 255);
 
   box-shadow: inset 3px 3px 5px #c0b9b9, inset -2px -2px 5px white;
-  transition: 0.1s ease;
+  transition: 1s ease;
 }
 
 .diceTextBox {
