@@ -43,18 +43,18 @@
     flex-direction: column;
   }
   .d6-zone {
-    border-bottom: 3px dashed black;
+    border-bottom: 3px dashed rgb(180, 180, 180);
   }
   #dice-column {
-    border-bottom: 3px dashed black;
+    border-bottom: 3px dashed rgb(180, 180, 180);
   }
 }
 
 @media only screen and (min-width: 501px) {
   .d6-zone {
-    border-left: 3px dashed black;
+    border-left: 3px dashed rgb(180, 180, 180);
   }
   #dice-column {
-    border-right: 3px dashed black;
+    border-right: 3px dashed rgb(180, 180, 180);
   }
 }
