@@ -1,9 +1,15 @@
+.diceContainer {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .dice {
   text-align: center;
   margin: auto;
+  margin-top: 0.5rem;
   border: 2px solid black;
   box-shadow: 5px 5px 3px 2px slategrey;
-  border-radius: 10px;
+  border-radius: 7px;
   width: 60px;
   height: fit-content;
   user-select: none;
@@ -11,7 +17,6 @@
   color: #fff;
   font-weight: bold;
   background-color: rgba(62, 161, 219, 1);
-
   border: 1px solid rgba(62, 161, 219, 1);
 
   background-image: linear-gradient(
@@ -19,8 +24,6 @@
     rgba(62, 161, 219, 1) 11.2%,
     rgba(93, 52, 236, 1) 100.2%
   );
-
-  border-radius: 5px;
 
   box-shadow: 4px -4px 0px rgba(62, 161, 219, 1),
     -4px 6px 15px rgba(219, 219, 219, 0.452);
@@ -33,4 +36,53 @@ button {
   margin: 0.2rem;
   background-color: whitesmoke;
   box-shadow: 0px 2px 2px 1px whitesmoke;
+}
+
+.diceTextBox {
+  margin: auto;
+  text-align: center;
+  max-width: 20vw;
+}
+
+.activeDiceText {
+  word-break: break-all;
+}
+
+@media only screen and (max-width: 500px) {
+  .diceTextBox {
+    font-size: small;
+    margin: auto;
+    text-align: center;
+    max-width: 80vw;
+  }
+
+  .activeDiceText {
+    word-break: break-all;
+  }
+  button {
+  }
+}
+@media only screen and (min-width: 501px) {
+  .diceTextBox {
+    font-size: small;
+    margin: auto;
+    text-align: center;
+    max-width: 22vw;
+  }
+
+  .activeDiceText {
+    word-break: break-all;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .diceTextBox {
+    margin: auto;
+    text-align: center;
+    max-width: 50vw;
+  }
+
+  .activeDiceText {
+    word-break: break-all;
+  }
 }

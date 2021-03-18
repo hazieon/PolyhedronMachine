@@ -54,9 +54,17 @@ function Dice({ type }) {
   }, [roll]);
 
   return (
-    <>
-      <div>
-        <h1>Active Dice:d{type.length}</h1>
+    <div className={styles.diceContainer}>
+      <div className={styles.diceTextBox}>
+        <h1 className={styles.activeDiceText}>
+          <label for=".activeDiceText">Active Dice:</label>
+
+          {type.length === 120
+            ? "disdyakis triacontahedron"
+            : "d" + type.length && type.length === 2
+            ? "coin"
+            : "d" + type.length}
+        </h1>
         <button onClick={addQuantity}>add</button>
         <button onClick={subtractQuantity}>remove</button>
       </div>
@@ -78,7 +86,7 @@ function Dice({ type }) {
           </>
         );
       })}
-    </>
+    </div>
   );
 }
 

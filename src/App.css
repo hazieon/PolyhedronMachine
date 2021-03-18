@@ -9,6 +9,7 @@
   text-align: center;
   display: grid;
   grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .selectContainer {
@@ -17,6 +18,7 @@
 
 .select {
   margin: auto;
+  margin-top: 1rem;
   text-align: center;
   border-radius: 30px;
   display: block;
@@ -29,7 +31,6 @@
   border: 1px solid #aaa;
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
   border-radius: 0.5em;
-
   background-color: #fff;
 }
 .select option {
