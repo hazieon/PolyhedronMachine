@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2 className="heading">Polyhedron Machine</h2>
+      <h2 className="heading">🎲Polyhedron Machine🎲</h2>
       <section className="dice-zone">
         <div id="dice-column" className="d6-zone">
           {
@@ -22,7 +22,7 @@ function App() {
                 }}
               >
                 <option value={d6} selected disabled hidden>
-                  select dice:
+                  select dice:🎲
                 </option>
                 <option key="d4" id="d4" value={d4}>
                   d4
@@ -66,7 +66,7 @@ function App() {
               }}
             >
               <option value={d6} selected disabled hidden>
-                select dice:
+                select dice:🎲
               </option>
               <option key="d4" id="d4" value={d4}>
                 d4
@@ -109,7 +109,7 @@ function App() {
               }}
             >
               <option value={d6} selected disabled hidden>
-                select dice:
+                select dice:🎲
               </option>
               <option key="d4" id="d4" value={d4}>
                 d4
