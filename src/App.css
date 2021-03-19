@@ -32,6 +32,7 @@ body {
 
 .heading {
   text-shadow: 1px 5px 6px rgb(48, 157, 208);
+  user-select: none;
 }
 
 .selectContainer {
@@ -39,6 +40,7 @@ body {
 }
 
 .select {
+  cursor: pointer;
   margin: auto;
   margin-top: 1rem;
   text-align: center;

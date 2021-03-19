@@ -28,6 +28,29 @@
     -4px 6px 15px rgba(219, 219, 219, 0.452);
   /* box-shadow: 4px -4px 0px rgba(62, 161, 219, 1), */
 }
+.dice:hover {
+  filter: saturate(1.5);
+  box-shadow: 4px -4px 0px rgba(62, 161, 219, 1),
+    -4px 6px 15px rgba(245, 245, 245, 0.658);
+  transform: rotate(10deg);
+  transform: rotate(-10deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dice:hover {
+    animation: roll infinite 0.2s linear alternate;
+  }
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(10deg);
+  }
+
+  to {
+    transform: rotate(-10deg);
+  }
+}
 
 button {
   border-radius: 2px;
@@ -38,6 +61,8 @@ button {
   font-weight: bold;
 }
 button:hover {
+  cursor: pointer;
+  transform: rotateY(30deg);
   transform: translateY(3px);
   background-color: rgb(255, 255, 255);
   box-shadow: inset 3px 3px 5px #c0b9b9, inset -2px -2px 5px white;
@@ -54,6 +79,7 @@ button:hover {
   word-break: break-all;
   margin-bottom: -7px;
   user-select: none;
+  cursor: pointer;
 }
 
 .buttonBox {
@@ -62,8 +88,9 @@ button:hover {
 .sum {
   font-size: larger;
   font-weight: bold;
-
   text-decoration: underline;
+  user-select: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 500px) {

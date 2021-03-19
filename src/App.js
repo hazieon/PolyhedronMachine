@@ -21,6 +21,9 @@ function App() {
                   setColumnOne(event.target.value.split(","));
                 }}
               >
+                <option value={d6} selected disabled hidden>
+                  select dice:
+                </option>
                 <option key="d4" id="d4" value={d4}>
                   d4
                 </option>
@@ -62,6 +65,9 @@ function App() {
                 setColumnTwo(event.target.value.split(","));
               }}
             >
+              <option value={d6} selected disabled hidden>
+                select dice:
+              </option>
               <option key="d4" id="d4" value={d4}>
                 d4
               </option>
@@ -102,6 +108,9 @@ function App() {
                 setColumnThree(event.target.value.split(","));
               }}
             >
+              <option value={d6} selected disabled hidden>
+                select dice:
+              </option>
               <option key="d4" id="d4" value={d4}>
                 d4
               </option>
