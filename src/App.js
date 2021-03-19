@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Polyhedron Machine</h2>
+      <h2 className="heading">Polyhedron Machine</h2>
       <section className="dice-zone">
         <div id="dice-column" className="d6-zone">
           {
