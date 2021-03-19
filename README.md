@@ -1,4 +1,4 @@
-# Polyhedron Machine 
+# Polyhedron Machine 🎲
 ## Dice rolling tool
 
 ### try it out here: https://polyhedra-machine.netlify.app/    
@@ -16,5 +16,5 @@ The 'active dice' will be shown and its geometric name
 **4. Press 'roll' to roll an individual dice *or***        
 **5. Press 'roll all' to roll all the dice of that type (in that column)**       
 **6. View the summed values of the dice.**         
-**7. Roll again!**        
+**7. 🎲 Roll again! 🎲**        
 
