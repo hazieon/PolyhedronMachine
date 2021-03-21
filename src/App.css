@@ -17,6 +17,7 @@ body {
 }
 
 .App {
+  font-size: larger;
   text-align: center;
   justify-content: center;
   place-items: center;
@@ -33,6 +34,7 @@ body {
 .heading {
   text-shadow: 1px 5px 6px rgb(48, 157, 208);
   user-select: none;
+  font-family: "Augie", "Consolas";
 }
 
 .selectContainer {
@@ -56,6 +58,7 @@ body {
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
   border-radius: 0.5em;
   background-color: #fff;
+  font-family: "Augie", "Consolas";
 }
 .select option {
   border-radius: 30px;

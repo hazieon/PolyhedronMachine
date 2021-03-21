@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: "Trebuchet MS", "Tahoma";
+  font-family: "Augie", "Consolas", "moon flower", "Trebuchet MS", "Tahoma";
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: rgb(44, 44, 44); */

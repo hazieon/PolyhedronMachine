@@ -95,10 +95,10 @@ function Dice({ type }) {
       {diceArr.map((d, i) => {
         return (
           <>
-            <div key={i} className={styles.dice}>
+            <div key={i} onClick={() => randomRoll(i)} className={styles.dice}>
               <h3>{d.roll}</h3>
             </div>
-            <button onClick={() => randomRoll(i)}>roll </button>
+            {/* <button >roll </button> */}
           </>
         );
       })}
