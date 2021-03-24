@@ -29,12 +29,20 @@
   /* box-shadow: 4px -4px 0px rgba(62, 161, 219, 1), */
   filter: saturate(1.2);
 }
+
 .dice:hover {
   filter: saturate(1.5);
   box-shadow: 4px -4px 0px rgba(62, 161, 219, 1),
     -4px 6px 16px rgb(193, 229, 255);
   transform: rotate(10deg);
   transform: rotate(-10deg);
+}
+
+.diceRowContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: auto;
+  align-items: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

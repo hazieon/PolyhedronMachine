@@ -15,7 +15,6 @@ function Dice({ type }) {
   }
   function setDiceDisplay(i) {
     let selectedDice = diceArr[i];
-    // console.log(selectedDice);
     return (selectedDice.roll = roll);
   }
   function rollAll() {
@@ -25,9 +24,8 @@ function Dice({ type }) {
   }
 
   function addQuantity() {
-    if (number < 6) {
+    if (number < 10) {
       setNumber(number + 1);
-      //   console.log(number);
       setDiceArr([...diceArr, { roll: "roll" }]);
     } else {
       setNumber(number);
@@ -82,35 +80,33 @@ function Dice({ type }) {
         </h2>
       </div>
       <div className={styles.buttonBox}>
-        <button onClick={addQuantity}>add</button>
-        <button onClick={subtractQuantity}>remove</button>
+        <button onClick={addQuantity}>add ＋</button>
+        <button onClick={subtractQuantity}>remove －</button>
       </div>
-      <button onClick={rollAll}>roll all</button>
+      <button onClick={rollAll}>roll all 🔄</button>
 
       <h4 className={styles.sum}>
         sum:
         {sum ? sum : "－"}
       </h4>
-
-      {diceArr.map((d, i) => {
-        return (
-          <>
-            <div key={i} onClick={() => randomRoll(i)} className={styles.dice}>
-              <h3>{d.roll}</h3>
-            </div>
-            {/* <button >roll </button> */}
-          </>
-        );
-      })}
+      <div className={styles.diceRowContainer}>
+        {diceArr.map((d, i) => {
+          return (
+            <>
+              <div
+                key={i}
+                onClick={() => randomRoll(i)}
+                className={styles.dice}
+              >
+                <h3>{d.roll}</h3>
+              </div>
+              {/* <button >roll </button> */}
+            </>
+          );
+        })}
+      </div>
     </div>
   );
 }
 
 export default Dice;
-
-// <div className={styles.dice}>
-//                 <h3>{d.roll}</h3>
-//               </div>
-//               <button onClick={() => randomRoll(diceChoice.value, i)}>
-//                 Roll
-//               </button>

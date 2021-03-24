@@ -54,7 +54,9 @@ function App() {
               </select>
             </div>
           }
-          <Dice type={columnOne} />
+          <div className="dice-box">
+            <Dice className="dice" type={columnOne} />
+          </div>
         </div>
         <div id="dice-column" className="d10-zone">
           {
@@ -97,7 +99,9 @@ function App() {
               </option>
             </select>
           }
-          <Dice type={columnTwo} />
+          <div className="dice-box">
+            <Dice className="dice" type={columnTwo} />
+          </div>
         </div>
         <div id="dice-column" className="d12-zone">
           {
@@ -140,7 +144,9 @@ function App() {
               </option>
             </select>
           }
-          <Dice type={columnThree} />
+          <div className="dice-box">
+            <Dice className="dice" type={columnThree} />
+          </div>
         </div>
       </section>
     </div>
