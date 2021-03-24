@@ -83,12 +83,9 @@ function Dice({ type }) {
         <button onClick={addQuantity}>add ＋</button>
         <button onClick={subtractQuantity}>remove －</button>
       </div>
-      <button onClick={rollAll}>roll all 🔄</button>
+      <button onClick={rollAll}>roll all 🎲</button>
 
-      <h4 className={styles.sum}>
-        sum:
-        {sum ? sum : "－"}
-      </h4>
+      <h4 className={styles.sum}>sum: {sum ? sum : "－"}</h4>
       <div className={styles.diceRowContainer}>
         {diceArr.map((d, i) => {
           return (
