@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Augie", "Consolas", "moon flower", "Trebuchet MS", "Tahoma";
+  font-family:  "Trebuchet MS","Augie", "Consolas", "moon flower", "Trebuchet MS", "Tahoma";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
