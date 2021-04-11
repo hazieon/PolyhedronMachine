@@ -1,5 +1,5 @@
 .diceContainer {
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -65,16 +65,17 @@ button {
   border-radius: 2px;
   padding: 4 10px;
   margin: 0.2rem;
-  background-color: whitesmoke;
+  background-color: white;
   box-shadow: 0px 2px 2.3px 1px whitesmoke;
   font-weight: bold;
 }
+
 button:hover {
   cursor: pointer;
   transform: rotateY(30deg);
   transform: translateY(3px);
   background-color: rgb(255, 255, 255);
-  box-shadow: inset 3px 3px 5px #c0b9b9, inset -2px -2px 5px white;
+  box-shadow: inset 3px 3px 5px #b3aeae, inset -2px -2px 5px white;
 }
 
 .diceTextBox {
@@ -86,7 +87,7 @@ button:hover {
 
 .activeDiceText {
   word-break: break-all;
-  margin-bottom: -7px;
+  margin-bottom: -5px;
   user-select: none;
   cursor: pointer;
 }

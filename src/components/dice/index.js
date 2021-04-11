@@ -4,7 +4,7 @@ import styles from "./index.module.css";
 function Dice({ type }) {
   const [roll, setRoll] = useState("roll");
   const [number, setNumber] = useState(1);
-  const [diceArr, setDiceArr] = useState([{ roll: "roll" }]);
+  const [diceArr, setDiceArr] = useState([{ roll: "roll" },{ roll: "roll" }]);
   const [sum, setSum] = useState(0);
 
   function randomRoll(i) {
@@ -54,9 +54,9 @@ function Dice({ type }) {
   return (
     <div className={styles.diceContainer}>
       <div className={styles.diceTextBox}>
-        <h3 className={styles.activeDiceText}>
+        <h2 className={styles.activeDiceText}>
           Active Dice: {"d" + type.length}
-        </h3>
+        </h2>
         <h2 className={styles.activeDiceText}>
           {type.length === 2
             ? "coin"

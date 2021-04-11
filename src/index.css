@@ -1,11 +1,8 @@
 body {
   margin: 0;
   font-family: "Augie", "Consolas", "moon flower", "Trebuchet MS", "Tahoma";
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: rgb(44, 44, 44); */
-  /* background-color: rgb(28, 50, 82); */
 }
 
 code {
