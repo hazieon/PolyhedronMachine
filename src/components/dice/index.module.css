@@ -16,23 +16,23 @@
   cursor: pointer;
   color: #fff;
   font-weight: bold;
-  background-color: rgba(62, 161, 219, 1);
-  border: 2px solid rgba(62, 161, 219, 1);
+  background-color: rgb(62, 148, 219);
+  border: 2px solid rgb(62, 148, 219);
   background-image: linear-gradient(
     109.6deg,
-    rgba(62, 161, 219, 1) 11.2%,
-    rgba(93, 52, 236, 1) 100.2%
+    rgb(62, 148, 219) 11.2%,
+    rgb(70, 52, 236) 100.2%
   );
 
-  box-shadow: 4px -4px 0px rgba(62, 161, 219, 1),
+  box-shadow: 4px -4px 0px rgb(62, 148, 219),
     -4px 6px 15px rgba(189, 226, 252, 0.671);
-  /* box-shadow: 4px -4px 0px rgba(62, 161, 219, 1), */
+  /* box-shadow: 4px -4px 0px rgb(62, 148, 219), */
   filter: saturate(1.2);
 }
 
 .dice:hover {
   filter: saturate(1.5);
-  box-shadow: 4px -4px 0px rgba(62, 161, 219, 1),
+  box-shadow: 4px -4px 0px rgb(62, 148, 219),
     -4px 6px 16px rgb(193, 229, 255);
   transform: rotate(10deg);
   transform: rotate(-10deg);
@@ -66,7 +66,7 @@ button {
   padding: 4 10px;
   margin: 0.2rem;
   background-color: white;
-  box-shadow: 0px 2px 2.3px 1px whitesmoke;
+  box-shadow: -1px 2px 2.3px 1px whitesmoke;
   font-weight: bold;
 }
 
