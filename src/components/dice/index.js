@@ -4,7 +4,7 @@ import styles from "./index.module.css";
 function Dice({ type }) {
   const [roll, setRoll] = useState("roll");
   const [number, setNumber] = useState(1);
-  const [diceArr, setDiceArr] = useState([{ roll: "roll" },{ roll: "roll" }]);
+  const [diceArr, setDiceArr] = useState([{ roll: "roll" }, { roll: "roll" }]);
   const [sum, setSum] = useState(0);
 
   function randomRoll(i) {
@@ -54,9 +54,7 @@ function Dice({ type }) {
   return (
     <div className={styles.diceContainer}>
       <div className={styles.diceTextBox}>
-        <h2 className={styles.activeDiceText}>
-          Active Dice: {"d" + type.length}
-        </h2>
+        <h2 className={styles.activeDiceText}>{"d" + type.length}</h2>
         <h2 className={styles.activeDiceText}>
           {type.length === 2
             ? "coin"
@@ -80,11 +78,14 @@ function Dice({ type }) {
         </h2>
       </div>
       <div className={styles.buttonBox}>
-        <button onClick={addQuantity}>add ＋</button>
-        <button onClick={subtractQuantity}>remove －</button>
-      </div>
-      <button onClick={rollAll}>roll all 🎲</button>
+        <h5 className={styles.numberOfDiceText}>Dice in play:</h5>
 
+        <button onClick={subtractQuantity}>Remove －</button>
+        <button onClick={addQuantity}>Add ＋</button>
+      </div>
+      <button className={styles.rollAllButton} onClick={rollAll}>
+        Roll All 🎲
+      </button>
       <h4 className={styles.sum}>sum: {sum ? sum : "－"}</h4>
       <div className={styles.diceRowContainer}>
         {diceArr.map((d, i) => {
@@ -97,7 +98,6 @@ function Dice({ type }) {
               >
                 <h3>{d.roll}</h3>
               </div>
-              {/* <button >roll </button> */}
             </>
           );
         })}

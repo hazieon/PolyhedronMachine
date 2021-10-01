@@ -1,5 +1,5 @@
 .diceContainer {
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -32,8 +32,7 @@
 
 .dice:hover {
   filter: saturate(1.5);
-  box-shadow: 4px -4px 0px rgb(62, 148, 219),
-    -4px 6px 16px rgb(193, 229, 255);
+  box-shadow: 4px -4px 0px rgb(62, 148, 219), -4px 6px 16px rgb(193, 229, 255);
   transform: rotate(10deg);
   transform: rotate(-10deg);
 }
@@ -69,7 +68,10 @@ button {
   box-shadow: -1px 2px 2.3px 1px whitesmoke;
   font-weight: bold;
 }
-
+.rollAllButton {
+  min-height: 2.5rem;
+  min-width: 5.5rem;
+}
 button:hover {
   cursor: pointer;
   transform: rotateY(30deg);
@@ -81,8 +83,10 @@ button:hover {
 .diceTextBox {
   margin: auto;
   text-align: center;
-  max-width: 20vw;
+  max-width: 50vw;
   line-height: 120%;
+  display: flex;
+  justify-content: center;
 }
 
 .activeDiceText {
@@ -90,10 +94,16 @@ button:hover {
   margin-bottom: -5px;
   user-select: none;
   cursor: pointer;
+  line-height: 0px;
+  height: 0px;
 }
-
+.numberOfDiceText {
+  line-height: 0px;
+  height: 0px;
+}
 .buttonBox {
-  margin-top: 1rem;
+  margin-top: 3rem;
+  border: 3px solid lime;
 }
 .sum {
   font-size: larger;

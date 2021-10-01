@@ -14,6 +14,7 @@ function App() {
         <div id="dice-column" className="d6-zone">
           {
             <div className="selectContainer">
+              <h2>1. Choose a dice:</h2>
               <select
                 className="select"
                 onChange={(event) => {
@@ -22,7 +23,7 @@ function App() {
                 }}
               >
                 <option value={d6} selected disabled hidden>
-                  select dice:🎲
+                  select 🎲👇
                 </option>
                 <option key="d4" id="d4" value={d4}>
                   d4
@@ -59,6 +60,7 @@ function App() {
           </div>
         </div>
         <div id="dice-column" className="d10-zone">
+          <h2>1. Choose a dice:</h2>
           {
             <select
               className="select"
@@ -104,6 +106,7 @@ function App() {
           </div>
         </div>
         <div id="dice-column" className="d12-zone">
+          <h2>1. Choose a dice:</h2>
           {
             <select
               className="select"
