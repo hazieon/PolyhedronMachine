@@ -17,6 +17,8 @@ body {
   justify-content: center;
   place-items: center;
   color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .dice-zone {
   margin: auto;

@@ -102,8 +102,7 @@ button:hover {
   height: 0px;
 }
 .buttonBox {
-  margin-top: 3rem;
-  border: 3px solid lime;
+  margin-top: 5rem;
 }
 .sum {
   font-size: larger;
